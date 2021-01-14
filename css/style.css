@@ -1,19 +1,128 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-h1,h2,h3,h4,h5{
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
 }
-img{
-  display: block;
-  width: 100%;
-  height: auto;
+a {
+	text-decoration: none;
+	color: inherit;
+	font-family: "Roboto", sans-serif;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
+/* font-family: 'Rosario', sans-serif; */
 
-body{
+body {
+	background: #fff;
+	font-family: "Roboto", sans-serif;
+}
+.container {
+	max-width: 1786px;
+	margin: 0 auto;
+	padding: 0 67px;
+}
+.header {
+	/* height: 1080px; */
+	position: relative;
+}
+.header-img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
 
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.search-input{
+  background: #F2F2F2;
+border: 0.75px solid #000000;
+box-sizing: border-box;
+border-radius: 30.5px;
+width: 405px;
+height: 63px;
+padding-left: 20px;
+padding-right: 78px;
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: 0.08em;
+outline: none;
+color: #303030;
+}
+.search-btn{
+  height: 63px;
+  width: 78px;
+  margin-left: -78px;
+background: #F56767;
+border: 0.75px solid #000000;
+border-radius:0 30.5px 30.5px 0;
+cursor: pointer;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+.nav__item:not(:last-child) {
+	margin-right: 30px;
+}
+.nav__link {
+	font-family: "Roboto", sans-serif;
+
+	font-size: 35px;
+	line-height: 41px;
+	letter-spacing: 0.08em;
+	color: #303030;
+}
+.social {
+	margin-top: 50%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social-link {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 47px;
+	letter-spacing: 0.025em;
+	color: #464646;
+}
+.social-link--fb {
+	transform: rotate(-90deg);
+	transform-origin: left;
+	/* position: absolute; */
+}
+.social-link--inst {
+	transform: rotate(90deg);
+	transform-origin: right;
+	/* position: absolute; */
 }
